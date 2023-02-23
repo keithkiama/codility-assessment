@@ -1,9 +1,9 @@
-# codility-assessment
+# Codility-assessment
+
 Codility Practice
 
-Challenge 1: No ifs no buts(Toy Problem)
+# Challenge 1: No ifs no buts(Toy Problem)
 
-# Problem
 Write a function that accepts two numbers a and b and returns whether a is smaller than, bigger than, or equal to b, as a string.
 
 There is only one problem...
