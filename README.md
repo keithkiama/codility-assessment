@@ -1,33 +1,35 @@
 # codility-assessment
 Codility Practice
 
-Add Length Toy Problem Solution
+Challenge 1: No ifs no buts(Toy Problem)
 
 # Problem
-What if we need the length of the words separated by a space to be added at the end of that same word and have it returned as an array?
-Write a function that takes a String and returns an Array/list with the length of each word added to each element .
-Note: String will have at least one element; words will always be separated by a space.
+Write a function that accepts two numbers a and b and returns whether a is smaller than, bigger than, or equal to b, as a string.
+
+There is only one problem...
+
+You cannot use if statements, and you cannot use the ternary operator ? 
+
+In fact, the word if and the character ? are not allowed in your code.
 
 BDD (Behavior Driven Development)
 
-Given: A string s
-When: The length of each word in string s is calculated
-Then: Return an array of (word + string length) for all words in string s
+    Given: a and b
+    When: The values are compared
+    Then: Return an array showing their comparison
 
 Example1
-Given: "apple ban"
-Return: ["apple 5", "ban 3"]
-Example2
-Given: "you will win"
-Return: ["you 3", "will 4", "win 3"]
 
-PseudoCode:
-Convert the string into an array of the words inside. Given: "apple ban" => ["apple", "ban"]
-Loop the resulting array to get the length of each item "apple" => 5 "ban" => 3
-Add the length of each word to the word itself "apple 5", "ban 3"
-Push these new strings to the final array; result=["apple 5", "ban 3"]
-Return the final array ["apple 5", "ban 3"]
+    (5, 4)   ---> "5 is greater than 4"
+
+    (-4, -7) ---> "-4 is greater than -7"
+
+    (2, 2)   ---> "2 is equal to 2"
+
+# PseudoCode:
+Give two numbers (a) and (b) --> (5, 4)
+Display which number is greater --> "5 is greater than 4"
 
 
-Code
+# Code
 The code is available in no_ifs_no_buts.rb
